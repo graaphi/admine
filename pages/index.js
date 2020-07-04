@@ -6,7 +6,7 @@ export default () => (
       </div>
       <div className="py-10">
         <h1 className="text-4xl font-semibold leading-tight mb-4 lg:pr-10">
-          Collection of beautiful and open source administrations pages.
+          Collection of beautiful and open source administration pages.
         </h1>
         <p className="text-lg text-gray-300">Fully responsive HTML administration pages.</p>
         <div className="flex flex-col pt-10 md:items-center md:flex-row">
