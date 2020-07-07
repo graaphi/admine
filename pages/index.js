@@ -1,4 +1,8 @@
-export default () => (
+import React from 'react';
+
+import Link from 'next/link';
+
+const Home = () => (
   <div className="flex flex-col w-full min-h-screen bg-gray-100 md:flex-row">
     <div className="bg-indigo-900 text-gray-100 flex flex-col lg:justify-center lg:w-8/12 px-10 lg:px-20">
       <div className="py-4">
@@ -10,11 +14,15 @@ export default () => (
         </h1>
         <p className="text-lg text-gray-300">Fully responsive HTML administration pages.</p>
         <div className="flex flex-col pt-10 md:items-center md:flex-row">
-          <a href="/layouts" className="rounded bg-white shadow-md text-center text-indigo-900 font-medium text-lg px-8 py-4 leading-tight transition-all ease-in-out duration-300 transform hover:-translate-y-1 hover:shadow-xl" role="button">
-            Explore layouts
-          </a>
+          <Link href="/layouts">
+            <a className="rounded bg-white shadow-md text-center text-indigo-900 font-medium text-lg px-8 py-4 leading-tight transition-all ease-in-out duration-300 transform hover:-translate-y-1 hover:shadow-xl" role="button">
+              Explore layouts
+            </a>
+          </Link>
         </div>
       </div>
     </div>
   </div>
 );
+
+export default Home;
