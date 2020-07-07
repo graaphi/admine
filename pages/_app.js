@@ -23,6 +23,7 @@ const App = ({
 }) => (
   <MDXProvider>
     <Head>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
