@@ -1,0 +1,291 @@
+---
+layout: 'page'
+title: 'Payment application page'
+category: 'payment'
+---
+
+<div className="w-full flex flex-row bg-cool-gray-100 lg:min-h-screen">
+  <aside className="bg-teal-700 hidden fixed inset-0 h-full bg-white z-90 w-full lg:-mb-0 lg:static lg:h-auto lg:overflow-y-visible lg:border-b-0 lg:pt-0 lg:w-1/4 lg:block lg:border-0 xl:w-1/5">
+    <div className="pt-6 pb-2 px-4">
+      <button className="flex items-center font-bold text-xl text-white focus:outline-none" type="button">
+        <div className="w-6 h-6 bg-teal-400 rounded-full mr-2" />
+        <div className="pl-1">
+          admine
+        </div>
+      </button>
+    </div>
+    <nav className="flex flex-col">
+      <ul className="w-full flex flex-col p-4 space-y-1">
+        <li>
+          <button className="text-teal-100 font-medium rounded flex items-center w-full px-4 py-2 bg-teal-800 text-sm focus:outline-none cursor-default" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            Home
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            History
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <line x1="19" y1="5" x2="5" y2="19" />
+                <circle cx="6.5" cy="6.5" r="2.5" />
+                <circle cx="17.5" cy="17.5" r="2.5" />
+              </svg>
+            </div>
+            Balances
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                <line x1="1" y1="10" x2="23" y2="10" />
+              </svg>
+            </div>
+            Cards
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            Recipients
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                <path d="M22 12A10 10 0 0 0 12 2v10z" />
+              </svg>
+            </div>
+            Reports
+          </button>
+        </li>
+      </ul>
+      <hr className="border-t border-teal-800 my-2 opacity-50" />
+      <ul className="w-full flex flex-col p-4 space-y-1">
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
+            </div>
+            Settings
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            Help
+          </button>
+        </li>
+        <li>
+          <button className="text-teal-100 rounded flex items-center w-full px-4 py-2 text-sm hover:bg-teal-600 hover:text-teal-100 transition-all focus:outline-none active:bg-teal-800" type="button">
+            <div className="mr-2 pr-1">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-teal-400">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            Privacy
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div className="min-h-screen w-full flex flex-col lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 xl:w-4/5">
+    <header className="w-full bg-white shadow">
+      <div className="shadow-xs">
+        <div className="container px-20">
+          <div className="flex items-center border-b border-gray-200 py-1">
+            <div className="flex items-center relative">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-gray-400 absolute left-0">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input className="text-sm py-4 pl-8 h-12 border-b border-transparent bg-white focus:outline-none" placeholder="Search transactions" type="search" />
+            </div>
+            <div className="ml-auto flex items-center space-x-2">
+              <button className="text-gray-400 hover:text-gray-500 focus:outline-none" type="button">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                </svg>
+              </button>
+              <button className="flex items-center text-sm rounded hover:bg-cool-gray-100 pl-2 pr-4 py-2 focus:outline-none" type="button">
+                <div className="w-6 h-6 bg-cool-gray-200 rounded-full mr-2">
+                  <img className="rounded-full block w-full h-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=80&h=80&q=100" alt="Profile picture" />
+                </div>
+                <div className="text-sm font-medium">
+                  Emilia Birch
+                </div>
+                <div className="ml-2">
+                  <svg viewBox="0 0 16 24" height="16" fill="none" stroke-width="2" className="w-2 h-auto stroke-current text-gray-400">
+                    <path d="M13 8.517L8 3 3 8.517M3 15.48l5 5.517 5-5.517" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-row py-6">
+            <div className="flex flex-1">
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-cool-gray-200 mr-4">
+                  <img className="rounded-full block w-full h-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=80&h=80&q=100" alt="Profile picture" />
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <h3 className="font-semibold">
+                    Good morning, Emilia Birch
+                  </h3>
+                  <div className="inline-flex items-center text-xs space-x-4 text-gray-500">
+                    <div className="inline-flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" className="w-3 h-auto fill-current text-gray-400 mr-2" fill="currentColor">
+                        <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0115 .5v15a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5V14h-1v1.5a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5V10a.5.5 0 01.342-.474L6 7.64V4.5a.5.5 0 01.276-.447l8-4a.5.5 0 01.487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5V15h2V1.309l-7 3.5V15z" />
+                        <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                      </svg>
+                      Duke Street Studio
+                    </div>
+                    <div className="inline-flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" className="w-3 h-auto fill-current text-green-400 mr-2" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-3.97-3.03a.75.75 0 00-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 00-1.06 1.06L6.97 11.03a.75.75 0 001.079-.02l3.992-4.99a.75.75 0 00-.01-1.05z" />
+                      </svg>
+                      Verified Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex items-center space-x-4">
+                <button className="bg-white text-gray-800 border border-gray-200 font-medium text-sm rounded px-4 py-2 focus:outline-none focus:shadow-outline-gray hover:border-gray-300 active:border-gray-400" type="button">
+                  Add money
+                </button>
+                <button className="bg-teal-600 text-white border border-transparent font-medium text-sm rounded px-4 py-2 hover:bg-teal-500 focus:outline-none focus:shadow-outline-teal active:bg-teal-700" type="button">
+                  Send money
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div className="w-full flex-1 px-20">
+      <div className="space-y-6 py-10">
+        <div className="flex flex-col">
+          <h4 className="text-base font-medium mb-2">
+            Overview
+          </h4>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full">
+            <div className="flex flex-col bg-white rounded shadow">
+              <div className="flex flex-1 items-center px-6 pt-4 pb-2">
+                <div className="mr-4">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-gray-400">
+                    <line x1="19" y1="5" x2="5" y2="19" />
+                    <circle cx="6.5" cy="6.5" r="2.5" />
+                    <circle cx="17.5" cy="17.5" r="2.5" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <small className="text-gray-500 text-xs block mb-px">
+                    Account balance
+                  </small>
+                  <div className="font-medium">
+                    $30,659.45
+                  </div>
+                </div>
+              </div>
+              <div className="bg-cool-gray-50 rounded-b px-6 py-2 leading-none text-sm">
+                <button className="font-medium text-teal-500 my-1" type="button">
+                  View all
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col bg-white rounded shadow">
+              <div className="flex flex-1 items-center px-6 pt-4 pb-2">
+                <div className="mr-4">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-gray-400">
+                    <polyline points="1 4 1 10 7 10" />
+                    <polyline points="23 20 23 14 17 14" />
+                    <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <small className="text-gray-500 text-xs block mb-px">
+                    Pending
+                  </small>
+                  <div className="font-medium">
+                    -$19,500.00
+                  </div>
+                </div>
+              </div>
+              <div className="bg-cool-gray-50 rounded-b px-6 py-2 leading-none text-sm">
+                <button className="font-medium text-teal-500 my-1" type="button">
+                  View all
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col bg-white rounded shadow">
+              <div className="flex flex-1 items-center px-6 pt-4 pb-2">
+                <div className="mr-4">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="w-5 h-auto stroke-current text-gray-400">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <small className="text-gray-500 text-xs block mb-px">
+                    Processed (Last 30 days)
+                  </small>
+                  <div className="font-medium">
+                    -$28,750.00
+                  </div>
+                </div>
+              </div>
+              <div className="bg-cool-gray-50 rounded-b px-6 py-2 leading-none text-sm">
+                <button className="font-medium text-teal-500 my-1" type="button">
+                  View all
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <h4 className="text-base font-medium">
+            Recent activity
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
