@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 const Home = () => (
-  <div className="flex flex-col w-full min-h-screen bg-gray-100 md:flex-row">
+  <div className="flex flex-col w-full min-h-screen bg-gray-900 md:flex-row">
     <Head>
       <title>Admine | Graaphi</title>
     </Head>
