@@ -6,7 +6,7 @@ import layouts from '../queries/layouts';
 
 const Layouts = () => (
   <div className="flex flex-col w-full min-h-screen bg-gray-100 md:flex-row">
-    <div className="container max-w-screen-sm mx-auto px-10 py-20">
+    <div className="container max-w-screen-sm mx-auto px-10 py-20 space-y-6">
       {
         layouts.map(({
           title,
