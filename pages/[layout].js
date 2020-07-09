@@ -1,8 +1,35 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import dynamic from 'next/dynamic';
 
+import LoadingIndicator from '../components/LoadingIndicator';
+import Page from '../components/Page';
+
 import layouts from '../queries/layouts';
+
+const defaultProps = {};
+
+const propTypes = {
+  layoutFile: PropTypes.string.isRequired,
+};
+
+const Layout = ({
+  layoutFile,
+}) => {
+  const SingleLayout = dynamic(() => import(`../layouts/${layoutFile}`), {
+    loading: () => (<LoadingIndicator />),
+  });
+
+  return (
+    <Page>
+      <SingleLayout />
+    </Page>
+  )
+};
+
+Layout.defaultProps = defaultProps;
+Layout.propTypes = propTypes;
 
 export async function getStaticPaths() {
   return {
@@ -22,19 +49,9 @@ export async function getStaticProps({
 }) {
   return {
     props: {
-      layout,
+      layoutFile: `${layout}.mdx`,
     },
   }
 }
-
-const Layout = ({
-  layout,
-}) => {
-  const SingleLayout = dynamic(() => import(`../layouts/${layout}.mdx`));
-
-  return (
-    <SingleLayout />
-  )
-};
 
 export default Layout;
