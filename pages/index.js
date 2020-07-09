@@ -1,15 +1,14 @@
 import React from 'react';
 
-import Head from 'next/head';
 import Link from 'next/link';
 
+import Head from '../components/Head';
 import Logo from '../components/Logo';
+import Page from '../components/Page';
 
 const Home = () => (
-  <div className="flex flex-col w-full min-h-screen bg-gray-900 md:flex-row">
-    <Head>
-      <title>Admine | Graaphi</title>
-    </Head>
+  <Page bgColor="bg-gray-900">
+    <Head title="Home" />
     <div className="bg-indigo-900 text-gray-100 flex flex-col lg:justify-center lg:w-8/12 px-10 lg:px-20">
       <Logo />
       <div className="py-10">
@@ -26,7 +25,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-  </div>
+  </Page>
 );
 
 export default Home;
