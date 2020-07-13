@@ -7,6 +7,50 @@ html {
   @apply bg-gray-50;
 }
 
+.spinner {
+  @apply rounded-full;
+
+  border-radius: 50%;
+  border-top: 16px rgba(255, 255, 255, 0.75) solid;
+  border-left: 16px rgba(255, 255, 255, 0.25) solid;
+  border-bottom: 16px rgba(255, 255, 255, 0.25) solid;
+  border-right: 16px rgba(255, 255, 255, 0.25) solid;
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    border-top: 16px rgba(255, 255, 255, 0.75) solid;
+    border-right: 16px rgba(255, 255, 255, 0.25) solid;
+    border-bottom: 16px rgba(255, 255, 255, 0.25) solid;
+    border-left: 16px rgba(255, 255, 255, 0.25) solid;
+  }
+  25% {
+    border-top: 16px rgba(255, 255, 255, 0.25) solid;
+    border-right: 16px rgba(255, 255, 255, 0.75) solid;
+    border-bottom: 16px rgba(255, 255, 255, 0.25) solid;
+    border-left: 16px rgba(255, 255, 255, 0.25) solid;
+  }
+  50% {
+    border-top: 16px rgba(255, 255, 255, 0.25) solid;
+    border-right: 16px rgba(255, 255, 255, 0.25) solid;
+    border-bottom: 16px rgba(255, 255, 255, 0.75) solid;
+    border-left: 16px rgba(255, 255, 255, 0.25) solid;
+  }
+  75% {
+    border-top: 16px rgba(255, 255, 255, 0.25) solid;
+    border-right: 16px rgba(255, 255, 255, 0.25) solid;
+    border-bottom: 16px rgba(255, 255, 255, 0.25) solid;
+    border-left: 16px rgba(255, 255, 255, 0.75) solid;
+  }
+  100% {
+    border-top: 16px rgba(255, 255, 255, 0.75) solid;
+    border-right: 16px rgba(255, 255, 255, 0.25) solid;
+    border-bottom: 16px rgba(255, 255, 255, 0.25) solid;
+    border-left: 16px rgba(255, 255, 255, 0.25) solid;
+  }
+}
+
 @tailwind components;
 
 @tailwind utilities;
